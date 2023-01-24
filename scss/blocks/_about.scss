@@ -1,0 +1,136 @@
+/* About */
+
+.about__inner {
+    padding-top: 96px;
+}
+
+.about__img {
+    width: 256px;
+    height: auto;
+}
+
+.about__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 32px;
+    &::before {
+        @include psevdoelements(inline-block, 100%, 1px, "");
+        background-color: #33323d;
+        opacity: 0.15;
+    }
+    &::after {
+        @include psevdoelements(inline-block, 100%, 1px, "");
+        background-color: #33323d;
+        opacity: 0.15;
+    }
+}
+
+.info-about__title {
+    margin-top: 32px;
+    margin-bottom: 28px;
+    font-family: "Ibarra Real Nova";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.357143px;
+    color: #33323d;
+}
+
+.info-about__text {
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.info-about__link {
+    max-width: 204px;
+    @include link-unstyle(inline-block);
+    margin-bottom: 51px;
+    padding: 16px 30px 16px 31px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    color: initial;
+    border: 1px solid #33323d;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+    overflow-wrap: break-word;
+    &:hover {
+        color: #fafafa;
+        background-color: #33323d;
+        transition: 0.3s ease;
+    }
+}
+
+@include mobile-first(375px) {
+    .about__img {
+        width: 311px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@include mobile-first(500px) {
+    .about__info {
+        max-width: 435px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .about__img {
+        width: 435px;
+    }
+}
+
+@include mobile-first(768px) {
+    .about__inner {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .about__info {
+        max-width: 339px;
+        margin: 0;
+    }
+    .info-about__title {
+        margin-top: 50px;
+    }
+    .info-about__link {
+        margin-bottom: 46px;
+    }
+    .about__img {
+        width: 281px;
+    }
+}
+
+@include mobile-first(900px) {
+    .about__inner {
+        padding-top: 120px;
+    }
+    .about__info {
+        max-width: 350px;
+    }
+}
+
+@include mobile-first(992px) {
+    .about__inner {
+        padding-top: 150px;
+    }
+    .about__img {
+        width: 380px;
+        height: 600px;
+        object-fit: cover;
+    }
+}
+
+@include mobile-first(1080px) {
+    .about__inner {
+        justify-content: flex-start;
+    }
+    .info-about {
+        margin-left: 125px;
+    }
+    .about__img {
+        width: 540px;
+    }
+}
