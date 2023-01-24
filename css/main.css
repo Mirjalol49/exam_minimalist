@@ -551,6 +551,229 @@ img {
   padding-right: 20px;
 }
 
+/* Contact */
+.contact__inner {
+  padding-top: 32px;
+  padding-bottom: 80px;
+}
+
+.contact__title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-family: "Ibarra Real Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+  color: #33323d;
+}
+
+.site-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.site-form__label {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 30px;
+  color: #5b5a63;
+}
+.site-form__label:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.site-form__input {
+  margin-top: 8px;
+  padding: 8px 18px;
+  font-size: 13px;
+  line-height: 30px;
+  border: 1px solid #e6e6e7;
+  color: #33323d;
+  background-color: #e6e6e7;
+}
+.site-form__input::-moz-placeholder {
+  color: #33323d;
+  opacity: 0.4;
+}
+.site-form__input:-ms-input-placeholder {
+  color: #33323d;
+  opacity: 0.4;
+}
+.site-form__input::placeholder {
+  color: #33323d;
+  opacity: 0.4;
+}
+.site-form__input:focus {
+  outline: 1px solid #5fb4a2;
+}
+.site-form__input:not(:-moz-placeholder-shown):not(:focus):invalid {
+  border-color: #f43030;
+}
+.site-form__input:not(:-ms-input-placeholder):not(:focus):invalid {
+  border-color: #f43030;
+}
+.site-form__input:not(:placeholder-shown):not(:focus):invalid {
+  border-color: #f43030;
+}
+.site-form__input:not(:-moz-placeholder-shown):not(:focus):invalid + .invalid-text {
+  opacity: 1;
+}
+.site-form__input:not(:-ms-input-placeholder):not(:focus):invalid + .invalid-text {
+  opacity: 1;
+}
+.site-form__input:not(:placeholder-shown):not(:focus):invalid + .invalid-text {
+  opacity: 1;
+}
+
+.invalid-text {
+  margin-top: 4px;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  color: #f43030;
+  opacity: 0;
+}
+
+.site-form__textarea {
+  height: 96px;
+  resize: none;
+}
+
+.site-form__btn {
+  width: 200px;
+  padding: 16px 23px;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 1px solid #203a4c;
+  color: #ffffff;
+  background-color: #203a4c;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.site-form__btn:hover {
+  color: #33323d;
+  border-color: #203a4c;
+  background-color: transparent;
+  transition: 0.2s ease;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact__inner {
+    padding-bottom: 96px;
+  }
+  .contact__title {
+    margin-bottom: 32px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .contact__inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 47px;
+    padding-bottom: 109px;
+  }
+  .contact__title {
+    margin-bottom: 0;
+  }
+  .site-form {
+    width: 535px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .site-form {
+    width: 635px;
+  }
+}
+/* Connect */
+.connect__inner {
+  display: flex;
+  flex-direction: column;
+}
+.connect__inner::before {
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  content: "";
+  background: #33323d;
+  opacity: 0.15;
+}
+.connect__inner::after {
+  margin-top: 32px;
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  content: "";
+  background: #33323d;
+  opacity: 0.15;
+}
+
+.connect__title {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-family: "Ibarra Real Nova";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+}
+
+.connect__text-wrapper .social-link {
+  color: #33323d;
+}
+
+.connect__text {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+@media only screen and (min-width: 768px) {
+  .connect__inner {
+    padding-top: 47px;
+  }
+  .connect__title {
+    margin-top: 32px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .connect__inner::before {
+    margin-bottom: 48px;
+  }
+  .connect__inner::after {
+    margin-top: 48px;
+  }
+  .connect__info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .connect__title {
+    margin: 0;
+  }
+  .connect__text-wrapper {
+    max-width: 535px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .connect__text-wrapper {
+    max-width: 635px;
+  }
+  .connect__text {
+    font-size: 16px;
+  }
+}
 /* Footer */
 .site-footer {
   background-color: #33323d;
