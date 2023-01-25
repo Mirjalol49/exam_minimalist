@@ -424,9 +424,12 @@ img {
   padding: 32px 0 40px;
 }
 
-.logo__img {
-  width: 60px;
-  height: 32px;
+.logo {
+  color: #33323d;
+}
+.logo:hover {
+  color: #5fb4a2;
+  transition: 0.3s ease;
 }
 
 .sitenav {
@@ -1967,6 +1970,14 @@ img {
 /* Footer */
 .site-footer {
   background-color: #33323d;
+}
+
+.logo_footer {
+  color: #ffffff;
+}
+.logo_footer:hover {
+  color: #5fb4a2;
+  transition: 0.3s ease;
 }
 
 .site-footer__inner {
