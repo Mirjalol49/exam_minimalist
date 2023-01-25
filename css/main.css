@@ -774,6 +774,9 @@ img {
 
 .about__img {
   width: 256px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: auto;
 }
 
@@ -815,6 +818,7 @@ img {
 .info-about__text {
   margin-top: 0;
   margin-bottom: 24px;
+  line-height: 30px;
 }
 
 .info-about__link {
@@ -840,6 +844,9 @@ img {
 
 @media only screen and (min-width: 375px) {
   .about__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 311px;
     margin-right: auto;
     margin-left: auto;
@@ -853,6 +860,9 @@ img {
   }
   .about__img {
     width: 435px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -873,6 +883,9 @@ img {
   }
   .about__img {
     width: 281px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media only screen and (min-width: 900px) {
@@ -888,6 +901,9 @@ img {
     padding-top: 150px;
   }
   .about__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 380px;
     height: 600px;
     -o-object-fit: cover;
@@ -902,6 +918,9 @@ img {
     margin-left: 125px;
   }
   .about__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 540px;
   }
 }
@@ -936,16 +955,9 @@ img {
   font-size: 40px;
   line-height: 42px;
   letter-spacing: -0.357143px;
-}
-
-.connect__text-wrapper .social-link {
-  color: #33323d;
-}
-
-.connect__text {
   margin-top: 0;
   margin-bottom: 24px;
-  font-size: 15px;
+  font-size: 40px;
   opacity: 0.8;
 }
 
@@ -982,6 +994,7 @@ img {
   }
   .connect__text {
     font-size: 16px;
+    line-height: 30px;
   }
 }
 /* Contact */
@@ -1442,7 +1455,6 @@ img {
   padding-right: 20px;
 }
 
-
 /* Contact */
 .contact__inner {
   padding-top: 32px;
@@ -1613,7 +1625,53 @@ img {
 .connect__title {
   margin-top: 24px;
   margin-bottom: 24px;
-=======
+  font-family: "Ibarra Real Nova";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 40px;
+  opacity: 0.8;
+}
+
+@media only screen and (min-width: 768px) {
+  .connect__inner {
+    padding-top: 47px;
+  }
+  .connect__title {
+    margin-top: 32px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .connect__inner::before {
+    margin-bottom: 48px;
+  }
+  .connect__inner::after {
+    margin-top: 48px;
+  }
+  .connect__info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .connect__title {
+    margin: 0;
+  }
+  .connect__text-wrapper {
+    max-width: 535px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .connect__text-wrapper {
+    max-width: 635px;
+  }
+  .connect__text {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
 .portfolio-hero {
   padding-top: 30px;
   padding-bottom: 0px;
@@ -1841,60 +1899,10 @@ img {
 .project__title {
   margin-top: 0;
   margin-bottom: 40px;
-
   font-family: "Ibarra Real Nova";
   font-weight: 700;
   font-size: 40px;
   line-height: 42px;
-
-  letter-spacing: -0.357143px;
-}
-
-.connect__text-wrapper .social-link {
-  color: #33323d;
-}
-
-.connect__text {
-  margin-top: 0;
-  margin-bottom: 24px;
-  font-size: 15px;
-  opacity: 0.8;
-}
-
-@media only screen and (min-width: 768px) {
-  .connect__inner {
-    padding-top: 47px;
-  }
-  .connect__title {
-    margin-top: 32px;
-  }
-}
-@media only screen and (min-width: 900px) {
-  .connect__inner::before {
-    margin-bottom: 48px;
-  }
-  .connect__inner::after {
-    margin-top: 48px;
-  }
-  .connect__info {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-  }
-  .connect__title {
-    margin: 0;
-  }
-  .connect__text-wrapper {
-    max-width: 535px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .connect__text-wrapper {
-    max-width: 635px;
-  }
-  .connect__text {
-    font-size: 16px;
-
   text-align: center;
   letter-spacing: -0.357143px;
   color: #33323d;
@@ -1954,7 +1962,6 @@ img {
   .project__inner {
     padding-top: 150px;
     padding-bottom: 150px;
-
   }
 }
 /* Footer */
