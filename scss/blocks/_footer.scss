@@ -35,6 +35,10 @@
 .site-footer-nav__link {
     @include link-unstyle;
     color: inherit;
+    &:hover {
+        color: #5fb4a2;
+        transition: 0.3s ease;
+    }
 }
 
 .social-list {
@@ -49,6 +53,10 @@
 
 .social-link {
     color: #fafafa;
+    &:hover {
+        color: #5fb4a2;
+        transition: 0.3s ease;
+    }
 }
 
 svg {
