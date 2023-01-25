@@ -15,7 +15,7 @@
         <div class="container">
             <div class="site-header__inner">
                 <a class="logo" href="./index.html">
-                    <img class="logo__img" src="./images/logo.svg" alt="logo-img" width="60" height="32" />
+                    <img class="logo__img" src="./images/logo.svg" alt="logo-img" width="60" height="32">
                 </a>
                 <nav class="sitenav">
                     <ul class="sitenav__list">
@@ -99,46 +99,14 @@
                 <div class="contact__inner">
                     <h3 class="contact__title">Contact Me</h3>
                     <form class="contact__form site-form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
-                        <label class="site-form__label">
-                            Name
-                            <input
-                            class="site-form__input"
-                            type="text"
-                            name="user_name"
-                            minlength="3"
-                            placeholder="Jane Appleseed"
-                            required
-                            />
-                            <span class="invalid-text" aria-hidden="true"
-                            >This field is required</span
-                            >
+                        <label class="site-form__label">Name<input class="site-form__input" type="text" name="user_name" minlength="2" placeholder="Jane Appleseed" required>
+                            <span class="invalid-text" aria-hidden="true">This field is required</span>
                         </label>
-                        <label class="site-form__label">
-                            Email Address
-                            <input
-                            class="site-form__input"
-                            type="email"
-                            name="user_email"
-                            minlength="3"
-                            placeholder="email@example.com"
-                            required
-                            />
-                            <span class="invalid-text" aria-hidden="true"
-                            >This field is required</span
-                            >
+                        <label class="site-form__label">Email Address<input class="site-form__input" type="email" name="user_email" minlength="3" placeholder="email@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                            <span class="invalid-text" aria-hidden="true">This field is required</span>
                         </label>
-                        <label class="site-form__label">
-                            Message
-                            <textarea
-                            class="site-form__input site-form__textarea"
-                            name="user__text"
-                            placeholder="How can I help?"
-                            minlength="5"
-                            required
-                            ></textarea>
-                            <span class="invalid-text" aria-hidden="true"
-                            >This field is required</span
-                            >
+                        <label class="site-form__label">Message<textarea class="site-form__input site-form__textarea" name="user__text" placeholder="How can I help?" minlength="5" required></textarea>
+                            <span class="invalid-text" aria-hidden="true">This field is required</span>
                         </label>
                         <button class="site-form__btn" type="submit">SEND MESSAGE</button>
                     </form>
