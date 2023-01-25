@@ -1,0 +1,40 @@
+@mixin mobile-first($min) {
+    @media only screen and (min-width: $min) {
+        @content;
+    }
+}
+
+@mixin list-unstyle {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+%button-unstyle {
+    background-color: transparent;
+    border: none;
+}
+
+@mixin link-unstyle($display: inline-block) {
+    display: $display;
+    text-decoration: none;
+}
+
+@mixin psevdoelements($display: inline-block, $width, $height, $content: "") {
+    display: $display;
+    width: $width;
+    height: $height;
+    content: $content;
+}
+
+@mixin bgRetinaImages {
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and ( min--moz-device-pixel-ratio: 2), only screen and ( -o-min-device-pixel-ratio: 2/1), only screen and ( min-device-pixel-ratio: 2), only screen and ( min-resolution: 192dpi), only screen and ( min-resolution: 2dppx) {
+        @content;
+    }
+}
+
+@mixin bg($repeat, $position, $size: null) {
+    background-repeat: $repeat;
+    background-position: $position;
+    background-size: $size;
+}
